@@ -1,0 +1,22 @@
+{
+	// Rails snippets
+	"form_for": {
+		"scope": "erb",
+		"prefix": "ff",
+		"body": [
+			"<%= form_for :$1, class: '$2' do |f| %>",
+			"  <%= f.submit, class: '$3' %>",
+			"<% end %>",
+		],
+		"description": "Insert a form_for helper"
+	},
+	"text_field": {
+		"scope": "erb",
+		"prefix": "ftf",
+		"body": [
+			"<%= f.text_field :$1 %>",
+		],
+		"description": "Insert a f.text_field helper"
+	},
+}
+
