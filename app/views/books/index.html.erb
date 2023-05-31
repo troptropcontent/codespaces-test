@@ -1,0 +1,11 @@
+<div class="flex-col bg-blue-50">
+  <h1>My books</h1>
+  <%= form_for :book, class: 'flex flex-col gap-3' do |f| %>
+    <%= f.text_field :author %>
+    <%= f.text_field :title %>
+    <%= f.submit %>
+  <% end %>
+  <ul>
+    <%= render @books %>
+  </ul>
+</div>
